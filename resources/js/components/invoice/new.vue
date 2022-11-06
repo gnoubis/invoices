@@ -107,7 +107,7 @@ const onSave = () => {
 
             <div class="card__header">
                 <div>
-                    <h2 class="invoice__title">New Invoice</h2>
+                    <h2 class="invoice__title">Nouvelle facture</h2>
                 </div>
                 <div>
 
@@ -117,7 +117,7 @@ const onSave = () => {
             <div class="card__content">
                 <div class="card__content--header">
                     <div>
-                        <p class="my-1">Customer</p>
+                        <p class="my-1">Client</p>
                         <select name="" id="" class="input" v-model="customer_id">
                             <option disabled>Select customer</option>
                             <option :value="customer.id" v-for="customer in allcustomers" :key=" customer.id">
@@ -143,9 +143,9 @@ const onSave = () => {
                 <div class="table">
 
                     <div class="table--heading2">
-                        <p>Item Description</p>
-                        <p>Unit Price</p>
-                        <p>Qty</p>
+                        <p> Description</p>
+                        <p>PU</p>
+                        <p>Qté</p>
                         <p>Total</p>
                         <p></p>
                     </div>
@@ -169,7 +169,7 @@ const onSave = () => {
                     </div>
                     <div style="padding: 10px 30px !important;">
                         <button class="btn btn-sm btn__open--modal" @click="openModel()">
-                            Add New Line
+                            AJouter une ligne
                         </button>
                     </div>
                 </div>
@@ -185,7 +185,7 @@ const onSave = () => {
                             <span>$ {{ subTotal()}}</span>
                         </div>
                         <div class="table__footer--discount">
-                            <p>Discount</p>
+                            <p>Réduction</p>
                             <input type="text" class="input" v-model="form.discount">
                         </div>
                         <div class="table__footer--total">
@@ -203,7 +203,7 @@ const onSave = () => {
                 </div>
                 <div>
                     <a class="btn btn-secondary" @click="onSave()">
-                        Save
+                        Enregistrer
                     </a>
                 </div>
             </div>
@@ -233,9 +233,9 @@ const onSave = () => {
                 <hr>
                 <div class="model__footer">
                     <button class="btn btn-light mr-2 btn__close--modal" @click="closeModal()">
-                        Cancel
+                        Annuler
                     </button>
-                    <button class="btn btn-light btn__close--modal ">Save</button>
+                    <button class="btn btn-light btn__close--modal ">Enregistrer</button>
                 </div>
             </div>
         </div>

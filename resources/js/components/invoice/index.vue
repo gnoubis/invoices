@@ -75,12 +75,12 @@ const onShow = (id) => {
                         <ul class="table--filter--list">
                             <li>
                                 <p class="table--filter--link table--filter--link--active">
-                                    All
+                                    Tout
                                 </p>
                             </li>
                             <li>
                                 <p class="table--filter--link ">
-                                    Paid
+                                   Payé
                                 </p>
                             </li>
                         </ul>
@@ -90,12 +90,12 @@ const onShow = (id) => {
                 <div class="table--search">
                     <div class="table--search--wrapper">
                         <select class="table--search--select" name="" id="">
-                            <option value="">Filter</option>
+                            <option value="">Filtrer</option>
                         </select>
                     </div>
                     <div class="relative">
                         <i class="table--search--input--icon fas fa-search "></i>
-                        <input class="table--search--input" type="text" placeholder="Search invoice"
+                        <input class="table--search--input" type="text" placeholder="Recherche facture"
                             v-model="searchInvoice" @keyup="search()">
                     </div>
                 </div>

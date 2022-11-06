@@ -46,7 +46,7 @@ const deleteInvoice = (id) => {
 
             <div class="card__header">
                 <div>
-                    <h2 class="invoice__title">Invoice</h2>
+                    <h2 class="invoice__title">Facture</h2>
                 </div>
                 <div>
 
@@ -64,7 +64,7 @@ const deleteInvoice = (id) => {
                             <!-- Select Btn Option -->
                             <button class="selectBtnFlat" @click="print()">
                                 <i class="fas fa-print"></i>
-                                Print
+                                Imprimer
                             </button>
                             <!-- End Select Btn Option -->
                         </li>
@@ -72,7 +72,7 @@ const deleteInvoice = (id) => {
                             <!-- Select Btn Option -->
                             <button class="selectBtnFlat" @click="onEdit(form.id)">
                                 <i class=" fas fa-reply"></i>
-                                Edit
+                                Editer
                             </button>
                             <!-- End Select Btn Option -->
                         </li>
@@ -80,7 +80,7 @@ const deleteInvoice = (id) => {
                             <!-- Select Btn Option -->
                             <button class="selectBtnFlat " @click="deleteInvoice(form.id) ">
                                 <i class=" fas fa-pencil-alt"></i>
-                                Delete
+                               Supprimer
                             </button>
                             <!-- End Select Btn Option -->
                         </li>
@@ -95,21 +95,21 @@ const deleteInvoice = (id) => {
                 </div>
                 <div class="invoice__header--title">
                     <p></p>
-                    <p class="invoice__header--title-1">Invoice</p>
+                    <p class="invoice__header--title-1">Facture</p>
                     <p></p>
                 </div>
 
 
                 <div class="invoice__header--item">
                     <div>
-                        <h2>Invoice To:</h2>
+                        <h2>Facture a :</h2>
                         <p v-if="form.customer">{{form.customer.firstname}}
 
                         </p>
                     </div>
                     <div>
                         <div class="invoice__header--item1">
-                            <p>Invoice#</p>
+                            <p>Fact#</p>
                             <span>#{{form.number}}</span>
                         </div>
                         <div class="invoice__header--item2">
@@ -132,9 +132,9 @@ const deleteInvoice = (id) => {
 
                     <div class="table--heading3">
                         <p>#</p>
-                        <p>Item Description</p>
-                        <p>Unit Price</p>
-                        <p>Qty</p>
+                        <p> Description</p>
+                        <p>PU</p>
+                        <p>Qté</p>
                         <p>Total</p>
                     </div>
 
@@ -159,7 +159,7 @@ const deleteInvoice = (id) => {
                             <span> $ 1{{form.sub_total}}</span>
                         </div>
                         <div class="invoice__subtotal--item2">
-                            <p>Discount</p>
+                            <p>Réduction</p>
                             <span>$ {{form.discount}}</span>
                         </div>
 
